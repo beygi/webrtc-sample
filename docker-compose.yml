@@ -1,0 +1,10 @@
+WEBRTC:
+    restart: always
+    image: kurento/kurento-media-server
+    ports:
+      - "8888:8888"
+    environment:
+      - DEBUG=false
+    volumes:
+      - /tmp/webrtc:/tmp
+  
